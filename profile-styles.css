@@ -6,7 +6,7 @@ body {
     line-height: 1.5;
     color: #222326;
     background-color: #fff;
-    margin: 0px;
+    margin: 0;
 }
 
 .container-fluid {
@@ -287,14 +287,5 @@ html, body{
     margin-bottom: 0;
   }
   
-  #main-body {
-    background: linear-gradient(120deg, #1db954, #191414);
-  }
-  .text-white{
-      font-weight: bolder;
-  }
-  .fa-spotify{
-      position: absolute;
-      left: 10%;
-  }
+
   
