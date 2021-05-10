@@ -82,7 +82,7 @@
                     </div> 
                     <div class="col">
                         <div class="album-container">
-                            <a href=""> <img src="img/viral50it.jpeg" alt="" class="img-fluid" /></a>
+                            <a href=""> <img src="img/viral50it.jpeg" alt="" class="img-fluid" /></
                             <h6 class="album-title">Viral 50 - Italy</h6>
                         </div>
                     </div> 
@@ -93,6 +93,84 @@
             
         </section>
 
+
+
+        <main>
+            <div class="container-fluid">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="divider">
+                                <strong class="divider-title ng-binding">or</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <form name="$parent.accounts" method="post" novalidate="" class="ng-pristine ng-valid-sp-disallow-chars ng-invalid ng-invalid-required">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label for="login username" class="control-label ng-binding">Email address or username</label>
+                                <input ng-model="form.username" type="text" class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched" name="username" id="login-username" placeholder="Email address or username" required="" sp-disallow-chars=":%&amp;'`´&quot;" sp-disallow-chars-model="usernameDisallowedChars" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="autofocus" ng-trim="false" ng-change="onInputChange()">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label for="login-password" class="control-label ng-binding">
+                                    Password
+                                </label>
+                                <input ng-model="form.password" type="password" class="form-control input-with-feedback ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" name="password" id="login-password" placeholder="Password" required="" autocomplete="off" ng-trim="false" ng-change="onInputChange()">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p><a id="reset-password-link" ng-href="https://www.spotify.com/password-reset/" analytics-on="click" analytics-category="Login View" analytics-event="Forgot Button" analytics-label="" class="ng-binding" href="https://www.spotify.com/password-reset/">Forgot your password?</a></p>
+                            </div>
+                        </div>
+                        <div class="row row-submit">
+                            <!-- **** The bug is here**** -->
+                            <div class="col-xs-12 col-sm-6">
+                                <div class="checkbox">
+                                    <label class="ng-binding">
+                                      <input ng-model="form.remember" type="checkbox" name="remember" analytics-on="checked" analytics-category="Login View" id="login-remember" class="ng-pristine ng-untouched ng-valid ng-not-empty"> Remember me
+                                      <span class="control-indicator"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <button class="btn btn-block btn-green ng-binding" id="login-button">Log In</button>
+                            </div>
+                         </div>
+                    </form>
+                    <div class="sign-up-section">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="ng-isolate-scope">
+                                    <div class="ng-scope" ng-if="showSignup">
+                                        <div class="ng-scope" ng-if="showButton">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="divider">
+                                                        <div class="row mt-0">
+                                                            <h2 class="h4 ng-binding">Don't have an account?</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <a id="sign-up-link" ng-click="onSignupClick()" ng-href="/en/login/signup?continue=https%3A%2F%2Fopen.spotify.com%2F%3Fl2l%3D1" class="btn btn-block btn-default ng-binding" role="button" href="/en/login/signup?continue=https%3A%2F%2Fopen.spotify.com%2F%3Fl2l%3D1">Sign up for Spotify</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <script src="https://kit.fontawesome.com/c3e37fe131.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
