@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html, body{
  font-family: 'Montserrat', sans-serif;;
+}
+
+.spotify-logo{
+    width: 200px;
+}
+
+.btn{
+    border-radius: 150px;
+    color: #fff;
 }
