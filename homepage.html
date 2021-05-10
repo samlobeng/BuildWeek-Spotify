@@ -13,8 +13,9 @@
     <style>
         body{min-height: 100vh;}
         nav.spotify-sidebar {
-            position:fixed;
-            min-height: 100vh;
+            position: sticky;
+            top: 0px;
+            min-height: 101vh;
             background-color: #070D14
         }
 
@@ -26,8 +27,8 @@
 
         nav.spotify-sidebar .auth-button {
             margin: 15px;
-            width: 250px;
-            height: 50px;
+            width: 100%;
+            height: 35px;
             border-radius: 25px;
             text-transform: uppercase;
             font-size: 15px;
@@ -70,11 +71,20 @@
         #home-cards .text-white{
             font-weight: bolder;
         }
+        .album-container img {
+            min-width: 15%
+        }
 
+
+        @media screen and (max-width: 550px){
+            h1{
+                font-size: revert;
+            }
+        }
     </style>
     <title>Homepage</title>
 </head>
-<body>
+<body class="p-0">
 <div class="container-fluid p-0">
     <div class="row no-gutters ">
         <div class="col-xl-2 col-md-4 col-sm-6 ">
@@ -94,7 +104,7 @@
                     </li>
 
                 </ul>
-                <ul class="nav navbar-nav mt-auto mb-5">
+                <ul class="nav navbar-nav mt-auto mb-5 w-75">
                     <li class="nav-item">
                         <button class="auth-button signup"> Sign Up</button>
                     </li>
@@ -114,11 +124,9 @@
             <main>
                 <section id="home-cards">
                     <div class="container">
+                        <h1 style class="text-white pt-4">#THROWBACKTHURSDAY</h1>
                         <div class="row py-5">
-                            <div class="col-12">
-                                <h1 class="text-white">#THROWBACKTHURSDAY</h1>
-                            </div>
-                            <div class="col-sm-2 col-md-4 col-lg-2">
+                            <div class="col-sm-6 col-md-4 col-lg-2">
                                 <div class="album-container">
                                     <a href=""><img src="img/card1.jpeg" alt="" class="img-fluid" /></a>
                                     <h6 class="album-title">Italian Karaoke</h6>
@@ -155,38 +163,37 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <h1 class="text-white pt-4">Classifiche</h1>
+                        <div class="row pt-4">
 
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h1 class="text-white">Classifiche</h1>
-                            </div>
-                            <div class="col">
+                        </div>
+
+                        <div class="row py-5 ">
+                            <div class="col-sm-6 col-md-4 col-lg-2">
                                 <div class="album-container ">
                                     <a href=""> <img src="img/top50.jpeg" alt="" class="img-fluid" /></a>
                                     <h6 class="album-title">Top 50 - Global</h6>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-sm-6 col-md-4 col-lg-2">
                                 <div class="album-container">
                                     <a href=""> <img src="img/top50ar.jpeg" alt="" class="img-fluid" /></a>
                                     <h6 class="album-title">Top 50 - Argentina</h6>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-sm-6 col-md-4 col-lg-2">
                                 <div class="album-container">
                                     <a href="">  <img src="img/viral.jpeg" alt="" class="img-fluid" /></a>
                                     <h6 class="album-title">Viral - 50 Global</h6>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-sm-6 col-md-4 col-lg-2">
                                 <div class="album-container">
                                     <a href=""> <img src="img/viral50it.jpeg" alt="" class="img-fluid" /></a>
                                     <h6 class="album-title">Viral 50 - Italy</h6>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-sm-6 col-md-4 col-lg-2">
                             </div>
                         </div>
                     </div>
