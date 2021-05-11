@@ -9,39 +9,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="page-changer.css">
-    <link rel="stylesheet" href="page-cards-wrapper.css">
     <title>Spotify</title>
-    <style>
-        #pageChanger {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            list-style-type: none;
-            align-items: center;
-        }
-
-        #pageChanger ul {
-            list-style-type: none;
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
 <div id="pageChanger">
     <div class="card-wrapper">
         <label class="selection-card">
-            <input type="radio" name="value" class="selectgroup-input" checked="">
-            <span class="card">
-      One
-    </span>
+            <input type="radio" value="login.html" class="selectgroup-input" >
+            <span class="card"> Login </span>
         </label>
-
         <label class="selection-card">
-            <input type="radio" name="value" class="selectgroup-input">
-            <span class="card">Two</span>
+            <input type="radio" value="homepage.html" class="selectgroup-input" >
+            <span class="card"> Homepage </span>
+        </label>
+        <label class="selection-card">
+            <input type="radio" value="artist.html" class="selectgroup-input" >
+            <span class="card"> Artist page </span>
         </label>
 
     </div>
@@ -51,8 +34,12 @@
     <ul class="tabs group">
         <li class="active"></li>
     </ul>
-
 </div>
+
+
+
+
+
 
 <script src="https://kit.fontawesome.com/c3e37fe131.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
