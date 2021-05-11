@@ -91,10 +91,13 @@
 
         .album-container:hover{
             transform: translateY(15px);
+            color: white;
         }
         .album-container:hover::before{
             content: '';
             opacity: 1;
+            z-index: -1;
+            border-radius: 15px;
         }
 
         .album-container::before{
@@ -153,8 +156,8 @@
             <main>
                 <section id="home-cards">
                     <div class="container">
-                        <h1 style class="animate__animated animate__fadeInTopLeft text-white pt-4">#THROWBACKTHURSDAY</h1>
-                        <div class="animate__animated animate__slideInLeft row py-5">
+                        <h1 style class="animate__animated animate__fadeInTopRight text-white pt-4">#THROWBACKTHURSDAY</h1>
+                        <div class="animate__animated animate__slideInRight row py-5">
                             <div class="col-sm-6 col-md-4 col-lg-2">
                                 <div class="album-container">
                                     <a href=""><img src="img/card1.jpeg" alt="" class="img-fluid" /></a>
@@ -192,12 +195,12 @@
                                 </div>
                             </div>
                         </div>
-                        <h1 class="animate__animated animate__fadeInTopLeft text-white pt-4">Classifiche</h1>
+                        <h1 class="animate__animated animate__fadeInTopRight text-white pt-4">Classifiche</h1>
                         <div class="row pt-4">
 
                         </div>
 
-                        <div class="animate__animated animate__slideInLeft row py-5 ">
+                        <div class="animate__animated animate__slideInRight row py-5 ">
                             <div class="col-sm-6 col-md-4 col-lg-2">
                                 <div class="album-container ">
                                     <a href=""> <img src="img/top50.jpeg" alt="" class="img-fluid" /></a>
