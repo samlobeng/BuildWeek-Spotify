@@ -1,0 +1,100 @@
+
+
+.tab-wrapper {
+    transform: rotate(-180deg);
+    padding: 0;
+}
+
+.tab-wrapper:after,
+.tab-wrapper:before {
+    content: "";
+    display: table;
+}
+
+.tab-wrapper:after {
+    clear: both;
+    overflow: hidden;
+}
+
+
+.tab-wrapper li {
+    list-style: none outside none;
+    float: left;
+    position: relative;
+}
+
+.tab-wrapper .active {
+    z-index: 3;
+}
+
+.tab-wrapper li:before,
+.tab-wrapper li:after,
+.tab-wrapper a:before,
+.tab-wrapper a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+}
+
+.tab-wrapper li:before,
+.tab-wrapper li:after {
+    background: lightgrey;
+    width: 10px;
+    height: 10px;
+}
+
+.tab-wrapper li:before {
+    left: -10px;
+}
+
+.tab-wrapper li:after {
+    right: -10px;
+}
+
+.tab-wrapper a {
+    float: left;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: black;
+    background: lightgrey;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab-wrapper .active a {
+    background: lightgrey;
+    color: black;
+}
+
+.tab-wrapper a:before,
+.tab-wrapper a:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: lightgrey;
+    z-index: 2;
+}
+
+.tab-wrapper .active a:before,
+.tab-wrapper .active a:after {
+    background: lightgrey;
+}
+
+.tab-wrapper a:before {
+    left: -20px;
+}
+
+.tab-wrapper a:after {
+    right: -20px;
+}
+
+.tab-wrapper .active:before,
+.tab-wrapper .active:after {
+    z-index: 1;
+    background: lightgrey;
+}
+
+.tab-wrapper li:first-child a:before,
+.tab-wrapper li:last-child a:after {
+    background-color: #fff;
+}
