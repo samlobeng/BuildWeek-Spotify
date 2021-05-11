@@ -8,7 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="profile-styles.css">
+           <link rel="stylesheet" href="profile-styles.css">
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- TODO: put in profile-styles.css -->
     <style>
         body{min-height: 100vh;}
@@ -81,6 +83,33 @@
                 font-size: revert;
             }
         }
+
+        /* Animations */
+        .album-container{
+            transition: .6s ease-out;
+        }
+
+        .album-container:hover{
+            transform: translateY(15px);
+        }
+        .album-container:hover::before{
+            content: '';
+            opacity: 1;
+        }
+
+        .album-container::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgb(61, 55, 146), transparent);
+            z-index: 2;
+            transition: 0.5s;
+            opacity: 0;
+        }
     </style>
     <title>Homepage</title>
 </head>
@@ -124,8 +153,8 @@
             <main>
                 <section id="home-cards">
                     <div class="container">
-                        <h1 style class="text-white pt-4">#THROWBACKTHURSDAY</h1>
-                        <div class="row py-5">
+                        <h1 style class="animate__animated animate__fadeInTopLeft text-white pt-4">#THROWBACKTHURSDAY</h1>
+                        <div class="animate__animated animate__slideInLeft row py-5">
                             <div class="col-sm-6 col-md-4 col-lg-2">
                                 <div class="album-container">
                                     <a href=""><img src="img/card1.jpeg" alt="" class="img-fluid" /></a>
@@ -163,12 +192,12 @@
                                 </div>
                             </div>
                         </div>
-                        <h1 class="text-white pt-4">Classifiche</h1>
+                        <h1 class="animate__animated animate__fadeInTopLeft text-white pt-4">Classifiche</h1>
                         <div class="row pt-4">
 
                         </div>
 
-                        <div class="row py-5 ">
+                        <div class="animate__animated animate__slideInLeft row py-5 ">
                             <div class="col-sm-6 col-md-4 col-lg-2">
                                 <div class="album-container ">
                                     <a href=""> <img src="img/top50.jpeg" alt="" class="img-fluid" /></a>
