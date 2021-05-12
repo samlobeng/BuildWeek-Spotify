@@ -19,13 +19,18 @@
         }
 
         body {
-            background: rgb(24,68,121);
 
-            background-image: linear-gradient(128deg, rgba(24,68,121,1) 3%, rgba(32,60,94,1) 29%, rgba(4,8,13,1) 100%);
             font-family: 'Exo','spoticon', sans-serif;
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
+        main{
+
+            background: linear-gradient(#00000000 20% , #000000 45% ) ,url(img/background.webp) ;
+            background-size: cover;
+            background-position: center;
+        }
+
     </style>
     <title>Homepage</title>
 </head>
@@ -53,7 +58,8 @@
 
                 </ul>
                 <!-- TODO: add artist variation -->
-                <!-- TODO: reuse buttons in top row
+                <!-- TODO: reuse buttons in top row -->
+                <!--
                 <ul class="nav navbar-nav mt-auto mb-5 w-75">
                     <li class="nav-item">
                         <button class="auth-button signup"> Sign Up</button>
@@ -72,6 +78,21 @@
         </div>
         <div class="col-xl-10 col-md-9 col-sm-8">
             <main>
+                <section id="artist-top" class="py-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <p class="text-white" > 333,000,575 MONTHLY LISTENERS</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h1 class="text-white">QUEEN</h1>
+                        </div>
+                        <div class="row flex-row justify-content-center align-items-center">
+                            <button class="artist-button play"> Play </button>
+                            <button class="artist-button follow"> Follow </button>
+                            <a><i class="fa fa-ellipsis-h text-white m-3 " style="font-size: 30px;"></i></a>
+                        </div>
+                    </div>
+                </section>
                 <header id="navbar" class="mb-3">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -93,7 +114,6 @@
 
                 </header>
                 <div class="mb-3"></div>
-                <!-- TODO: merge samuel work refactor namings -->
                 <section id="home-cards">
                     <div class="container">
                         <h1 style class="animate__animated animate__fadeInTopRight text-white pt-4">Albums</h1>
