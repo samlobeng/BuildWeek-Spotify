@@ -252,6 +252,6 @@ h5{
 
 /* animation */
 
-.animate__animated.animate__bounceInRight, .animate__animated.animate__fadeInDown {
+.animate__animated.animate__fadeInDown, .animate__animated.animate__bounceInUp {
     --animate-duration: 4s;
   }
