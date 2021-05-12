@@ -177,6 +177,7 @@ section#artist-top .artist-button.follow:hover {
     display: flex;
     align-items: center ;
     justify-content: center;
+    width: 300px;
 }
 
 #player-starting-space .row div {
