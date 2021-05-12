@@ -104,3 +104,64 @@ nav.spotify-sidebar .auth-button.login:hover {
     opacity: 0;
 }
 .album-container h6 { position: relative; z-index:3 }
+
+
+/* footer player updated */
+   
+
+#player-starting-space .row {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+
+#player-starting-space .row div {
+   margin: 0px;
+   padding: 0px;
+}
+
+#player-starting-space .row div:nth-child(2) {
+    margin-right: 30px;
+    margin-left: 5px;
+    width: 50px;
+ }
+
+
+footer #nowplaying>div img{
+    width: 55px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+
+}
+
+footer h6 {
+    color: #FFFFFF;
+    font-size: 0.8em;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px;
+    padding:0px
+}
+
+footer #player-starting-space p {
+    color: #b3b3b3;
+    font-size: 0.6em;
+    position: relative;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer #player-starting-space i {
+    color: #ccc;
+}
+
+footer #player-starting-space svg {
+    color: #ccc;
+}
+
+
+
