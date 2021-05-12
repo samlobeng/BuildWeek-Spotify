@@ -228,5 +228,48 @@ footer #player-starting-space svg {
     color: #ccc;
 }
 
+/* Playlist */
 
+#playlist{
+    background-color: #000000;
+
+}
+
+#playlist .songs{
+    color: #fff;
+}
+#playlist .songs:hover{
+    cursor: pointer;
+}
+
+#playlist .songs{
+    color: #fff;
+}
+
+#playlist .songs .artist-name{
+    color: #b3b3b3;
+}
+.bi{
+    color: #b3b3b3;;
+}
+
+h5{
+    font-weight: bolder;
+}
+
+.artist-button.play{
+    border: 2px solid limegreen;
+    color: white;
+    background-color: limegreen;
+    border-radius: 100px;
+    width: 8rem;
+}
+
+.artist-button.play:hover {
+    color: black;
+    background-position: 0 -90px;
+    background-color: white;
+}
+
+/* end of playlist */
 
