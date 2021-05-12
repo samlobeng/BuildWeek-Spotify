@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 nav ul:last-child > div {
     margin-bottom: 3rem;
 
@@ -230,3 +234,18 @@ footer #player-starting-space svg {
 
 
 
+#albumcover img {
+    width: 257px;
+}
+
+#albumcover h1 {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#albumcover p {
+    color: #ccc;
+    text-align: center;
+    font-size: 0.7em;
+}
