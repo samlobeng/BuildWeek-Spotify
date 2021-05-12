@@ -83,6 +83,7 @@ nav.spotify-sidebar .auth-button.login:hover {
 .album-container:hover{
     transform: translateY(15px);
     color: white;
+    cursor: pointer;
 }
 .album-container:hover::before{
     content: '';
