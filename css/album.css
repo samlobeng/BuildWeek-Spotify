@@ -250,3 +250,8 @@ h5{
 
 /* end of playlist */
 
+/* animation */
+
+.animate__animated.animate__bounceInRight, .animate__animated.animate__fadeInDown {
+    --animate-duration: 4s;
+  }
