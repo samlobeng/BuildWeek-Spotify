@@ -1,7 +1,14 @@
+nav ul:last-child > div {
+    margin-bottom: 3rem;
+
+
+}
 
 nav.spotify-sidebar {
 
-    height: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0vh;
     background-color: #070D14
 }
 
