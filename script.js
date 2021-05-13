@@ -11,18 +11,22 @@ window.onload = function () {
             e.currentTarget.querySelector('input').setAttribute('checked',true)
             let pageName = e.currentTarget.querySelector('input').value
             $('iframe')[0].setAttribute('src', pageName )
+            $('.card-wrapper')[0].classList.add('collapsed')
         })
     }
     //attach event handler to show/hide
-
+    
     $('.show-page-list')[0].addEventListener('click', (e) => {
-            let btn = e.currentTarget
+        let btn = e.currentTarget
             if( !btn.getAttribute('active') ) {
                 btn.setAttribute("active", true)
                 $('.card-wrapper')[0].classList.add('collapsed')
+                document.querySelector('.glass').classList.add('animate__animated animate__slideInUp')
             }else{
-                btn.removeAttribute("active")
+                 btn.removeAttribute("active")
                 $('.card-wrapper')[0].classList.remove('collapsed')
+               
+
 
             }
 
