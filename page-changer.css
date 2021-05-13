@@ -72,6 +72,11 @@ input[type=radio] {
     border-bottom-right-radius: 20px;
     transition: display linear 1s
 }
+@media (max-width: 1340px) {
+    .card-wrapper{
+     flex-direction: column;
+    }
+}
 .card-wrapper.collapsed{
     display: none;
 }
