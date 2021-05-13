@@ -21,7 +21,6 @@ window.onload = function () {
             if( !btn.getAttribute('active') ) {
                 btn.setAttribute("active", true)
                 $('.card-wrapper')[0].classList.add('collapsed')
-                document.querySelector('.glass').classList.add('animate__animated animate__slideInUp')
             }else{
                  btn.removeAttribute("active")
                 $('.card-wrapper')[0].classList.remove('collapsed')
