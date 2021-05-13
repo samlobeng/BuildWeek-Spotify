@@ -1,4 +1,27 @@
 
+
+
+.glass {
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .glass {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .glass {
+        background-color: rgba(255, 255, 255, .9);
+    }
+}
+
 #pageChanger {
     position: absolute;
     top: 0;
@@ -8,14 +31,14 @@
     flex-direction: column;
     list-style-type: none;
     align-items: center;
+
 }
 
 #pageChanger ul {
     list-style-type: none;
-
 }
 
-.tab-wrapper{
+.show-page-list{
 
     padding: 0;
     border: 2px solid lightgrey;
@@ -27,11 +50,11 @@
     justify-content: center;
     align-items: center;
 }
-.tab-wrapper li{
-    /* transform: rotate(-180deg);*/
+.show-page-list[active] {
+    transform: rotate(-180deg);
 }
 
-@charset "UTF-8";
+
 input[type=radio] {
     position: absolute;
     left: -9999px;
@@ -43,10 +66,14 @@ input[type=radio] {
     align-items: center;
     justify-content: center;
     padding: 5rem;
-    border: 2px solid lightgray;
-    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    transition: display linear 1s
+}
+.card-wrapper.collapsed{
+    display: none;
 }
 .card {
     border: 2px solid #d6dde3;
