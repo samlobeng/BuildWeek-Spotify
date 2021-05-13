@@ -1,4 +1,4 @@
-#Spotify Pages replicas 
+# Spotify Pages replicas 
 
 ![](docs/preview.gif)
 
